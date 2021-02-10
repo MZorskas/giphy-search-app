@@ -1,0 +1,7 @@
+@import 'src/styles/base/base';
+
+@mixin if-phone {
+  @media screen and (max-width: $breakpoint-phone) {
+    @content;
+  }
+}

@@ -1,0 +1,38 @@
+@import 'src/styles/mixins/index';
+@import 'src/styles/base/base';
+
+.image-modal {
+  $_modal-spacing: 2rem;
+
+  @include position-fixed(0, null, null, 0);
+
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+
+  &__content {
+    $_max-content-size: 60rem;
+
+    @include position-fixed(50%, null, null, 50%);
+
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    max-width: $_max-content-size;
+    padding: $_modal-spacing;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+
+  &__button {
+    @include position-absolute(0, $_modal-spacing, null, null);
+
+    padding: 0;
+  }
+
+  &__image {
+    border: 1px solid $color-primary;
+  }
+}

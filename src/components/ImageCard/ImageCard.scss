@@ -1,0 +1,33 @@
+@import 'src/styles/mixins/index';
+@import 'src/styles/base/base';
+
+.image-card {
+  position: relative;
+  transition: 0.5s;
+
+  &__image {
+    @include position-absolute(0, null, 0, 0);
+
+    margin: auto;
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  &::before {
+    background-color: $color-black;
+    content: '';
+    display: block;
+    padding-top: 100%;
+    opacity: 0.4;
+  }
+
+  &:hover {
+    box-shadow: 0 0.3rem 0.2rem rgba(52, 232, 158, 0.034),
+      0 0.7rem 0.5rem rgba(52, 232, 158, 0.048),
+      0 1.3rem 1rem rgba(52, 232, 158, 0.06),
+      0 2.2rem 1.8rem rgba(52, 232, 158, 0.072),
+      0 4.2rem 3.3rem rgba(52, 232, 158, 0.086),
+      0 10rem 8rem rgba(52, 232, 158, 0.12);
+  }
+}

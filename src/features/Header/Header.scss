@@ -1,0 +1,23 @@
+@import 'src/styles/mixins/index';
+
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+
+  &__title {
+    @include text-style-h1;
+
+    margin: 0;
+    padding: 0.5rem 0;
+    color: $color-primary;
+
+    @include if-phone () {
+      @include text-style-h2;
+
+      text-align: center;
+    }
+  }
+}

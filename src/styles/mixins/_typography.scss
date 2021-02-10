@@ -1,0 +1,30 @@
+@mixin text-style-h1 {
+  font-size: $font-size-2xlarge;
+  font-weight: $font-weight-heavy;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+@mixin text-style-h2 {
+  font-size: $font-size-xlarge;
+  font-weight: $font-weight-heavy;
+  line-height: 1.2;
+}
+
+@mixin text-style-h3 {
+  font-size: $font-size-large;
+  font-weight: $font-weight-regular;
+  line-height: 1.2;
+}
+
+@mixin text-style-body {
+  font-size: $font-size-regular;
+  font-weight: $font-weight-regular;
+  line-height: 1.5;
+}
+
+@mixin text-style-body-small {
+  font-size: $font-size-small;
+  font-weight: $font-weight-bold;
+  line-height: 1.57;
+}

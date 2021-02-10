@@ -1,0 +1,37 @@
+@import 'src/styles/mixins/index';
+@import 'src/styles/base/base';
+
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+
+  &__info-wrapper {
+    display: flex;
+    color: $color-font-primary;
+    margin: 1.5rem 0;
+  }
+
+  &__title {
+    @include text-style-h2;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  &__amount {
+    @include text-style-body-small;
+
+    padding: 0 0 0 0.5rem;
+    color: $color-font-secondary;
+  }
+
+  &__grid {
+    display: grid;
+    grid-gap: 4rem;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  }
+
+  &__loader {
+    color: $color-primary;
+  }
+}

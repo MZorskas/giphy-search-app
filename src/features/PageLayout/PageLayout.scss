@@ -1,0 +1,20 @@
+@import 'src/styles/mixins/index';
+@import 'src/styles/base/base';
+
+.page-layout {
+  display: flex;
+  background-color: $color-background-primary;
+  background-image: linear-gradient(
+    315deg,
+    $color-background-primary 0%,
+    #28313b 74%
+  );
+  min-height: 100vh;
+
+  &__content-wrapper {
+    margin: 0 auto;
+    max-width: 140rem;
+    width: 100%;
+    padding: 0 2rem;
+  }
+}

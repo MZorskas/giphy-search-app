@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+@import 'base/base';
+@import 'mixins/mixins';
+
+:root {
+  font-family: $font-family-primary;
+  font-size: $root-font-size;
+}

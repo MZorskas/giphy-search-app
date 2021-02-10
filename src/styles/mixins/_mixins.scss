@@ -1,0 +1,17 @@
+@import 'src/styles/base/base';
+
+@mixin position-absolute($top, $right, $bottom, $left) {
+  bottom: $bottom;
+  left: $left;
+  position: absolute;
+  right: $right;
+  top: $top;
+}
+
+@mixin position-fixed($top, $right, $bottom, $left) {
+  bottom: $bottom;
+  left: $left;
+  position: fixed;
+  right: $right;
+  top: $top;
+}

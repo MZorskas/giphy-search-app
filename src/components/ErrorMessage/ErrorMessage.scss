@@ -1,0 +1,9 @@
+@import 'src/styles/mixins/index';
+@import 'src/styles/base/base';
+
+.error-message {
+  @include text-style-body;
+
+  color: $color-font-primary;
+  margin: 1.5rem auto;
+}
