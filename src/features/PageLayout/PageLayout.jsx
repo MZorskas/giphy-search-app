@@ -39,22 +39,18 @@ const PageLayout = () => {
     setData([]);
   }, [searchValue]);
 
-  // console.log(data);
-
   return (
     <main className="page-layout">
       <div className="page-layout__content-wrapper">
         <Header fetchData={fetchData} />
-        {!!data && (
-          <GalleryContainer
-            title={searchValue}
-            totalCount={totalCount}
-            data={data}
-            fetchData={fetchData}
-            error={error}
-            isLoading={isLoading}
-          />
-        )}
+        <GalleryContainer
+          title={searchValue}
+          totalCount={totalCount}
+          data={data}
+          fetchData={fetchData}
+          error={error}
+          isLoading={isLoading}
+        />
       </div>
     </main>
   );

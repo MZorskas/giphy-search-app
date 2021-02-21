@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImageModal component matches snapshot 1`] = `
+<aside
+  className="image-modal"
+  data-testid="image-modal"
+  onClick={[Function]}
+  onKeyDown={[Function]}
+>
+  <div
+    className="image-modal__content"
+    data-testid="image-modal-content"
+  >
+    <button
+      aria-label="search"
+      className="icon-button image-modal__button"
+      data-testid="icon-button"
+      type="button"
+    >
+      <svg>
+        symbol_x.svg
+      </svg>
+    </button>
+    <img
+      alt="alt"
+      className="image-modal__image"
+      src="imageUrl"
+    />
+  </div>
+</aside>
+`;

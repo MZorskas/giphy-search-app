@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IconButton component matches snapshot 1`] = `
+<button
+  aria-label="search"
+  className="icon-button"
+  data-testid="icon-button"
+  type="button"
+>
+  <svg>
+    search.svg
+  </svg>
+</button>
+`;
+
+exports[`IconButton component matches snapshot with additional className 1`] = `
+<button
+  aria-label="search"
+  className="icon-button icon-button-test"
+  data-testid="icon-button"
+  type="button"
+>
+  <svg>
+    search.svg
+  </svg>
+</button>
+`;
+
+exports[`IconButton component matches snapshot with correct attributes 1`] = `
+<button
+  aria-label="search"
+  className="icon-button"
+  data-testid="icon-button"
+  form="form-id"
+  type="button"
+>
+  <svg>
+    search.svg
+  </svg>
+</button>
+`;

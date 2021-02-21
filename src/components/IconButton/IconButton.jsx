@@ -7,6 +7,7 @@ const IconButton = React.forwardRef(
   ({ icon, onClick, className, type, form, ariaLabel }, ref) => {
     return (
       <button
+        data-testid="icon-button"
         className={classNames('icon-button', className)}
         onClick={onClick}
         ref={ref}

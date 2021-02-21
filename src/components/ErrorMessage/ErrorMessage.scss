@@ -4,6 +4,6 @@
 .error-message {
   @include text-style-body;
 
-  color: $color-font-primary;
+  color: $color-error-primary;
   margin: 1.5rem auto;
 }

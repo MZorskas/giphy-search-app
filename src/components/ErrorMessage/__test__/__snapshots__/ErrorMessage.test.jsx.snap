@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorMessage component matches snapshot 1`] = `
+<p
+  className="error-message"
+  data-testid="error-message"
+>
+  Error message
+</p>
+`;
+
+exports[`ErrorMessage component matches snapshot with additional className 1`] = `
+<p
+  className="error-message error-message-test"
+  data-testid="error-message"
+>
+  Error message
+</p>
+`;

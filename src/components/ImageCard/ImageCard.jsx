@@ -14,6 +14,8 @@ const ImageCard = memo(({ images, alt, elementRef }) => {
     imageCardRef.current.focus();
   };
 
+  const handleMouseDown = (event) => event.preventDefault();
+
   const handleClick = () => {
     if (!isOpen) {
       document.body.style.overflow = 'hidden';
@@ -32,12 +34,19 @@ const ImageCard = memo(({ images, alt, elementRef }) => {
       onClick={handleClick}
       onKeyDown={handleKeyDown}
       ref={imageCardRef}
+      data-testid="image-card"
+      onMouseDown={handleMouseDown}
     >
       <picture>
-        <source media="(max-width: 768px)" srcSet={images?.downsized.url} />
+        <source
+          media="(max-width: 768px)"
+          srcSet={images?.downsized.url}
+          data-testid="image-card-source-1"
+        />
         <source
           media="(min-width: 769px)"
           srcSet={images?.downsized_large.url}
+          data-testid="image-card-source-2"
         />
         <img
           src={images?.downsized_large.url}

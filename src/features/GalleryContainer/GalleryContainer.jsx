@@ -90,7 +90,10 @@ const GalleryContainer = ({
       {error && !isLoading && <ErrorMessage message={error} />}
 
       {totalCount === 0 && !isLoading && !error && title && (
-        <ErrorMessage message={`No GIFs found for ${title}`} />
+        <ErrorMessage
+          className="gallery-container__error-message"
+          message={`No GIFs found for ${title}`}
+        />
       )}
     </section>
   );

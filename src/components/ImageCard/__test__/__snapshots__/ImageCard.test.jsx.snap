@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImageCard component matches snapshot 1`] = `
+<div
+  className="image-card"
+  data-testid="image-card"
+  onClick={[Function]}
+  onKeyDown={[Function]}
+  onMouseDown={[Function]}
+  tabIndex="0"
+>
+  <picture>
+    <source
+      data-testid="image-card-source-1"
+      media="(max-width: 768px)"
+      srcSet="imgURL1"
+    />
+    <source
+      data-testid="image-card-source-2"
+      media="(min-width: 769px)"
+      srcSet="imgURL2"
+    />
+    <img
+      alt="image alt"
+      className="image-card__image"
+      src="imgURL2"
+    />
+  </picture>
+</div>
+`;

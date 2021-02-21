@@ -2,30 +2,17 @@
 @import 'src/styles/base/base';
 
 .search {
-  min-height: 9.4rem;
+  min-height: 11.4rem;
 
   &__form {
     display: flex;
   }
 
   &__input {
-    @include text-style-h3;
-
-    border: none;
-    box-sizing: border-box;
-    margin: 0;
     min-height: 6rem;
     padding: 0 1.6rem;
     width: 100%;
     transition: 0.5s;
-
-    &--error {
-      background-color: lighten($color-error-primary, 20%);
-    }
-
-    &::placeholder {
-      @include text-style-h3;
-    }
   }
 
   &__button {
@@ -39,10 +26,7 @@
     height: $_icon-size;
   }
 
-  &__validation-error {
-    @include text-style-body;
-
-    color: $color-error-primary;
+  &__error-message {
     margin: 0.5rem 0;
   }
 

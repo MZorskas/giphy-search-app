@@ -46,8 +46,17 @@ const ImageModal = ({ imageUrl, closeModal, alt }) => {
   }, [closeButtonRef, modalRef, setLastFocusableNode]);
 
   return ReactDOM.createPortal(
-    <aside className="image-modal" onClick={onClickAway} onKeyDown={onKeyDown}>
-      <div className="image-modal__content" ref={modalRef}>
+    <aside
+      className="image-modal"
+      data-testid="image-modal"
+      onClick={onClickAway}
+      onKeyDown={onKeyDown}
+    >
+      <div
+        data-testid="image-modal-content"
+        className="image-modal__content"
+        ref={modalRef}
+      >
         <IconButton
           className="image-modal__button"
           icon={<CloseIcon />}

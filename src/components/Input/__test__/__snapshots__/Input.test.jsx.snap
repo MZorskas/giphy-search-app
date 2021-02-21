@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input component matches snapshot 1`] = `
+<div
+  className="input-wrapper"
+  data-testid="input"
+>
+  <label
+    className="input-wrapper__label"
+    htmlFor="search-input"
+  >
+    Search
+  </label>
+  <input
+    autoFocus={true}
+    className="input-wrapper__input input-test"
+    id="search-input"
+    onChange={[MockFunction]}
+    placeholder="Gifs"
+  />
+</div>
+`;

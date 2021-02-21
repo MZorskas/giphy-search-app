@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search component matches snapshot 1`] = `
+<section
+  className="search"
+  data-testid="search"
+>
+  <form
+    aria-label="search"
+    className="search__form"
+    data-testId="search-form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="input-wrapper"
+      data-testid="input"
+    >
+      <label
+        className="input-wrapper__label"
+        htmlFor="search-input"
+      >
+        Search
+      </label>
+      <input
+        autoFocus={true}
+        className="input-wrapper__input search__input"
+        id="search-input"
+        onChange={[Function]}
+        placeholder="Gifs"
+      />
+    </div>
+    <button
+      aria-label="search"
+      className="icon-button search__button"
+      data-testid="icon-button"
+      type="submit"
+    >
+      <svg
+        className="search__icon"
+      >
+        search.svg
+      </svg>
+    </button>
+  </form>
+  
+</section>
+`;

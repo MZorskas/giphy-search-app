@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react';
 import './Search.scss';
 import { inputRegex } from 'utils/regex';
 import IconButton from 'components/IconButton';
+import Input from 'components/Input';
+import ErrorMessage from 'components/ErrorMessage';
 import { SearchIcon } from 'assets/icons';
 import PropTypes from 'prop-types';
-import classNames from 'classnames';
 
 const Search = ({ fetchData }) => {
   const [inputValue, setInputValue] = useState();
@@ -17,8 +18,6 @@ const Search = ({ fetchData }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    // setValidationError('');
-
     if (!inputValue) return setValidationError('Input should not be empty');
     if (!inputRegex.test(inputValue))
       return setValidationError('Should only contain letters and numbers');
@@ -30,14 +29,20 @@ const Search = ({ fetchData }) => {
   };
 
   return (
-    <section className="search">
-      <form className="search__form" onSubmit={handleSubmit}>
-        <input
-          className={classNames('search__input', {
-            'search__input--error': validationError,
-          })}
+    <section className="search" data-testid="search">
+      <form
+        className="search__form"
+        aria-label="search"
+        onSubmit={handleSubmit}
+        data-testId="search-form"
+      >
+        <Input
+          className="search__input"
           onChange={handleChange}
-          placeholder="Search all the GIF's"
+          placeholder="Gifs"
+          validationError={!!validationError}
+          id="search-input"
+          label="Search"
           autoFocus
         />
         <IconButton
@@ -47,7 +52,10 @@ const Search = ({ fetchData }) => {
         />
       </form>
       {validationError && (
-        <p className="search__validation-error">{validationError}</p>
+        <ErrorMessage
+          className="search__error-message"
+          message={validationError}
+        />
       )}
     </section>
   );
