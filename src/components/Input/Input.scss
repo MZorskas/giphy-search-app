@@ -15,10 +15,6 @@
     &--error {
       background-color: lighten($color-error-primary, 20%);
     }
-
-    &::placeholder {
-      @include text-style-h3;
-    }
   }
 
   &__label {

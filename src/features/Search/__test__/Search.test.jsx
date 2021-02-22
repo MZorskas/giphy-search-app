@@ -37,15 +37,12 @@ describe('Search component', () => {
     expect(spy).not.toHaveBeenCalled();
   });
 
-  //   it('renders and focuses inputField', () => {
-  //     expect(screen.queryByTestId('search')).not.toBeInTheDocument();
-  //     render(<Search fetchData={mockfetchData} />);
-  //     expect(screen.queryByTestId('search')).toBeInTheDocument();
-
-  //     expect(document.activeElement).toEqual(
-  //       screen.queryByPlaceholderText('Gifs')
-  //     );
-  //   });
+  it('renders and focuses inputField', () => {
+    expect(screen.queryByTestId('search')).not.toBeInTheDocument();
+    render(<Search fetchData={mockfetchData} />);
+    expect(screen.queryByTestId('search')).toBeInTheDocument();
+    expect(screen.queryByPlaceholderText('Gifs')).toHaveFocus();
+  });
 
   it('fires handleSubmit function on submit', () => {
     const { input } = inputSetup();
@@ -104,25 +101,17 @@ describe('Search component', () => {
     expect(input).toBeInTheDocument();
 
     expect(input.value).toBe('');
-
     fireEvent.submit(input);
-
     expect(screen.queryByTestId('error-message')).toHaveTextContent(
       'Input should not be empty'
     );
-
     fireEvent.change(input, { target: { value: '#' } });
-
     expect(screen.queryByTestId('error-message')).not.toBeInTheDocument();
-
     fireEvent.submit(input);
-
     expect(screen.queryByTestId('error-message')).toHaveTextContent(
       'Should only contain letters and numbers'
     );
-
     fireEvent.change(input, { target: { value: '#1' } });
-
     expect(screen.queryByTestId('error-message')).not.toBeInTheDocument();
   });
 

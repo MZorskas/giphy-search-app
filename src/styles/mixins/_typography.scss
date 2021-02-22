@@ -17,6 +17,12 @@
   line-height: 1.2;
 }
 
+@mixin text-style-h4 {
+  font-size: $font-size-regular;
+  font-weight: $font-weight-medium;
+  line-height: 1.2;
+}
+
 @mixin text-style-body {
   font-size: $font-size-regular;
   font-weight: $font-weight-regular;

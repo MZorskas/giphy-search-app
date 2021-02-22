@@ -9,10 +9,20 @@
   }
 
   &__input {
-    min-height: 6rem;
+    $_input-height: 6rem;
+
+    min-height: $_input-height;
     padding: 0 1.6rem;
     width: 100%;
     transition: 0.5s;
+
+    &::placeholder {
+      @include text-style-h4;
+
+      color: $color-font-secondary;
+      font-weight: $font-weight-regular;
+      line-height: $_input-height;
+    }
   }
 
   &__button {
@@ -34,7 +44,13 @@
     text-align: center;
 
     &__input {
-      min-height: 5rem;
+      $_input-height: 5rem;
+
+      min-height: $_input-height;
+
+      &::placeholder {
+        line-height: $_input-height;
+      }
     }
 
     &__button {
