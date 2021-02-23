@@ -8,8 +8,6 @@
     "@testing-library/react": "^11.2.5",
     "axios": "^0.21.1",
     "classnames": "^2.2.6",
-    "dom-testing-library": "^5.0.0",
-    "jest-dom": "^4.0.0",
     "normalize.css": "^8.0.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
@@ -43,6 +41,7 @@
   "devDependencies": {
     "jest-prop-type-error": "^1.1.0",
     "node-sass": "5.0.0",
-    "react-test-renderer": "^17.0.1"
+    "react-test-renderer": "^17.0.1",
+    "jest-dom": "^4.0.0"
   }
 }
