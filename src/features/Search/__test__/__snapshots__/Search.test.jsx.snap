@@ -8,7 +8,7 @@ exports[`Search component matches snapshot 1`] = `
   <form
     aria-label="search"
     className="search__form"
-    data-testId="search-form"
+    data-testid="search-form"
     onSubmit={[Function]}
   >
     <div

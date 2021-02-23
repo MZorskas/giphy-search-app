@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageLayout component matches snapshot  1`] = `
+<main
+  className="page-layout"
+  data-testid="page-layout"
+>
+  <div
+    className="page-layout__content-wrapper"
+  >
+    <mock-Header
+      data-testId="mock-header"
+      fetchData={[Function]}
+    />
+  </div>
+</main>
+`;

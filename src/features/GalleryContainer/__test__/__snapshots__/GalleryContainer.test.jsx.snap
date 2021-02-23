@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GalleryContainer component matches snapshot with ErrorMessage 1`] = `
+<section
+  className="gallery-container"
+  data-testid="gallery-container"
+>
+  <div
+    className="gallery-container__info-wrapper"
+  >
+    <h2
+      className="gallery-container__title"
+    >
+      Test
+      <span
+        className="gallery-container__amount"
+      >
+        0
+         GIFs
+      </span>
+    </h2>
+  </div>
+  <p
+    className="error-message gallery-container__error-message"
+    data-testid="error-message"
+  >
+    No GIFs found for Test
+  </p>
+</section>
+`;
+
+exports[`GalleryContainer component matches snapshot with data 1`] = `
+<section
+  className="gallery-container"
+  data-testid="gallery-container"
+>
+  <div
+    className="gallery-container__info-wrapper"
+  >
+    <h2
+      className="gallery-container__title"
+    >
+      Test
+      <span
+        className="gallery-container__amount"
+      >
+        10
+         GIFs
+      </span>
+    </h2>
+  </div>
+  <div
+    className="gallery-container__grid"
+  >
+    <mock-ImageCard
+      alt="Test"
+      data-testId="mock-image-card"
+      images={
+        Object {
+          "url": "url1",
+        }
+      }
+    />
+    <mock-ImageCard
+      alt="Test"
+      data-testId="mock-image-card"
+      images={
+        Object {
+          "url": "url2",
+        }
+      }
+    />
+    <mock-ImageCard
+      alt="Test"
+      data-testId="mock-image-card"
+      elementRef={[Function]}
+      images={
+        Object {
+          "url": "url3",
+        }
+      }
+    />
+  </div>
+</section>
+`;
+
+exports[`GalleryContainer component matches snapshot without data 1`] = `
+<section
+  className="gallery-container"
+  data-testid="gallery-container"
+>
+  <div
+    className="gallery-container__info-wrapper"
+  >
+    <h2
+      className="gallery-container__title"
+    >
+      Test
+      <span
+        className="gallery-container__amount"
+      >
+        10
+         GIFs
+      </span>
+    </h2>
+  </div>
+</section>
+`;

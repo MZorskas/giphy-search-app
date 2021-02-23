@@ -34,7 +34,7 @@ const Search = ({ fetchData }) => {
         className="search__form"
         aria-label="search"
         onSubmit={handleSubmit}
-        data-testId="search-form"
+        data-testid="search-form"
       >
         <Input
           className="search__input"
